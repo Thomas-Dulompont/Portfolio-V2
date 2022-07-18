@@ -1,0 +1,43 @@
+nav {
+    width: 80%;
+    height: 70px;
+    margin: 50px auto 0;
+    display: flex;
+    justify-content: space-between;
+    #btn-Logo-Nav {
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+    #navbar {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        li {
+            height: 35px;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 50px;
+            a {
+                height: 100%;
+                width: 100%;
+                color: #9A9A9A;
+                background-color: red;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        #btn-contact {
+            width: 180px;
+            height: 70px;
+            a {
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+}
