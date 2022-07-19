@@ -1,0 +1,24 @@
+section {
+    max-width: 575px;
+    p {
+        margin-left: 100px;
+        line-height: 175%;
+    }
+}
+
+//TITLE
+section > :first-child {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+section > :first-child::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    border-radius: 50px;
+    background-color: black;
+    left: 8px;
+    bottom: -35px;
+}

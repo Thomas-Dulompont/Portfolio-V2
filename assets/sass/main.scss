@@ -1,3 +1,7 @@
+// ABSTRACTS
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
 // BASE
 @import "base/base";
 @import "base/font";
@@ -6,10 +10,6 @@
 // VENDORS
 
 
-// ABSTRACTS
-@import "abstracts/mixins";
-@import "abstracts/variables";
-
 // COMPONENTS
 @import "components/button";
 
@@ -17,9 +17,10 @@
 @import "layout/footer";
 @import "layout/header";
 @import "layout/navigation";
+@import "layout/section";
 
 // PAGES
-@import "pages/index";
+@import "pages/home";
 
 // THEMES
 

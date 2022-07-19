@@ -1,14 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap");
 * {
   padding: 0;
   margin: 0;
   font-family: 'Baloo Tamma 2', cursive;
-  font-size: 20px;
+  font-size: 25px;
+}
+
+html {
+  max-width: 2000px;
+  margin: 0 auto;
+  background-color: #DFDEDF;
+}
+
+h1 {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 600;
+  font-size: 80px;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: #9A9A9A;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -39,15 +52,6 @@ body {
    */
 main {
   display: block;
-}
-
-/**
-   * Correct the font size and margin on `h1` elements within `section` and
-   * `article` contexts in Chrome, Firefox, and Safari.
-   */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
 }
 
 /* Grouping content
@@ -427,6 +431,7 @@ nav #navbar li a {
   font-weight: 600;
   -webkit-transition: .5s ease-out;
   transition: .5s ease-out;
+  font-size: 20px;
 }
 
 nav #navbar li :hover {
@@ -458,5 +463,35 @@ nav #navbar #btn-contact a {
 
 nav #navbar #btn-contact :hover {
   background-position: left;
+}
+
+section {
+  max-width: 575px;
+}
+
+section p {
+  margin-left: 100px;
+  line-height: 175%;
+}
+
+section > :first-child {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+section > :first-child::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  border-radius: 50px;
+  background-color: black;
+  left: 8px;
+  bottom: -35px;
+}
+
+#home {
+  width: 70%;
+  margin: 100px auto;
 }
 /*# sourceMappingURL=main.css.map */
