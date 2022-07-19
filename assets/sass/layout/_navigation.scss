@@ -16,27 +16,52 @@ nav {
         align-items: center;
         li {
             height: 35px;
-            background-color: blue;
             display: flex;
             justify-content: center;
             align-items: center;
             margin: 0 50px;
+            position: relative;
+            ::after {
+                content: "";
+                height: 2px;
+                width: 50px;
+                background: linear-gradient(to right, transparent 50%, black 50%) left;
+                background-size: 200%;
+                transition: .5s ease-out;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+            :hover::after {
+                background-position: right;
+            }
             a {
                 height: 100%;
                 width: 100%;
                 color: #9A9A9A;
-                background-color: red;
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                font-weight: 600;
+                transition: .5s ease-out;
+            }:hover {
+                color: black;
+                transition: .5s ease-out;
             }
         }
         #btn-contact {
             width: 180px;
             height: 70px;
+            ::after {
+                background: transparent;
+            }
             a {
-                background-color: black;
+                justify-content: center;
+                background: linear-gradient(to left, black 50%, #D40000 50%) right;
+                background-size: 200%;
+                transition: .5s ease-out;
                 color: white;
+            }:hover {
+                background-position: left;
             }
         }
     }
