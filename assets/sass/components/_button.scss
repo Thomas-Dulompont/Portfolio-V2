@@ -22,3 +22,32 @@
         margin: 0 0 0 20px;
     }
 }
+
+.btn-top {
+    width: fit-content;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10000;
+    position: absolute;
+    right: 5px;
+    bottom: -55px;
+    background: linear-gradient(to bottom, black 50%, #D40000 50%) top;
+    background-size: 200% 200%;
+    transition: .5s ease-out;
+    &:hover {
+        background-position: bottom;
+    }
+    img {
+        padding: 16px;
+        height: 32px;
+        width: 32px;
+        transform: rotate(180deg);
+    }
+    p {
+        font-size: 20px;
+        margin: 0 0 0 20px;
+        color: white;
+    }
+}

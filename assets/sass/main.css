@@ -401,6 +401,49 @@ template {
   margin: 0 0 0 20px;
 }
 
+.btn-top {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 10000;
+  position: absolute;
+  right: 5px;
+  bottom: -55px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, black), color-stop(50%, #D40000)) top;
+  background: linear-gradient(to bottom, black 50%, #D40000 50%) top;
+  background-size: 200% 200%;
+  -webkit-transition: .5s ease-out;
+  transition: .5s ease-out;
+}
+
+.btn-top:hover {
+  background-position: bottom;
+}
+
+.btn-top img {
+  padding: 16px;
+  height: 32px;
+  width: 32px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.btn-top p {
+  font-size: 20px;
+  margin: 0 0 0 20px;
+  color: white;
+}
+
 #cv-arrow {
   position: absolute;
   width: 100%;
