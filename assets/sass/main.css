@@ -401,6 +401,16 @@ template {
   margin: 0 0 0 20px;
 }
 
+#cv-arrow {
+  position: absolute;
+  width: 95%;
+  height: auto;
+  top: 50px;
+  right: 0;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
 nav {
   width: 80%;
   height: 70px;
