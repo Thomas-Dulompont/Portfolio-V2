@@ -1,0 +1,25 @@
+.btn-next {
+    max-height: 65px;
+    width: 165px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    left: 5px;
+    bottom: -55px;
+    img {
+        padding: 16px;
+        height: 32px;
+        width: 32px;
+        background: linear-gradient(to top, black 50%, #D40000 50%) bottom;
+        background-size: 200% 200%;
+        transition: .5s ease-out;
+        &:hover {
+            background-position: top;
+        }
+    }
+    p {
+        font-size: 20px;
+        margin: 0;
+    }
+}

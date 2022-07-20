@@ -1,6 +1,6 @@
 #home {
-    width: 70%;
-    margin: 100px auto;
+    width: 80%;
+    margin: 50px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
@@ -12,11 +12,10 @@
         }
         #img-arrow {
             position: absolute;
-            left: -270px;
+            left: -300px;
             top: 0;
             max-width: 250px;
             transform: rotate(-60deg);
-            transition: 5s;
         }
     }
     div::after {

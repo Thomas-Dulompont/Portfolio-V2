@@ -358,6 +358,43 @@ template {
   display: none;
 }
 
+.btn-next {
+  max-height: 65px;
+  width: 165px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  left: 5px;
+  bottom: -55px;
+}
+
+.btn-next img {
+  padding: 16px;
+  height: 32px;
+  width: 32px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, black), color-stop(50%, #D40000)) bottom;
+  background: linear-gradient(to top, black 50%, #D40000 50%) bottom;
+  background-size: 200% 200%;
+  -webkit-transition: .5s ease-out;
+  transition: .5s ease-out;
+}
+
+.btn-next img:hover {
+  background-position: top;
+}
+
+.btn-next p {
+  font-size: 20px;
+  margin: 0;
+}
+
 nav {
   width: 80%;
   height: 70px;
@@ -467,6 +504,7 @@ nav #navbar #btn-contact :hover {
 
 section {
   max-width: 575px;
+  position: relative;
 }
 
 section p {
@@ -475,7 +513,7 @@ section p {
 }
 
 section > :first-child {
-  margin-bottom: 20px;
+  margin: 40px 0px 20px 0px;
   position: relative;
 }
 
@@ -491,8 +529,8 @@ section > :first-child::after {
 }
 
 #home {
-  width: 70%;
-  margin: 100px auto;
+  width: 80%;
+  margin: 50px auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -512,13 +550,11 @@ section > :first-child::after {
 
 #home div #img-arrow {
   position: absolute;
-  left: -270px;
+  left: -300px;
   top: 0;
   max-width: 250px;
   -webkit-transform: rotate(-60deg);
           transform: rotate(-60deg);
-  -webkit-transition: 5s;
-  transition: 5s;
 }
 
 #home div::after {
