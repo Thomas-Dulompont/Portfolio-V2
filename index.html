@@ -22,16 +22,16 @@
     <link rel="stylesheet" href="./assets/sass/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
 </head>
-<body>
+<body id="top">
 
     <nav>
-        <a id="btn-Logo-Nav" href="#home">
+        <a id="btn-Logo-Nav" href="#top">
             <img src="/img/logo_dlmp.png" alt="Logo DLMP Navbar">
         </a>
 
         <ul id="navbar">
             <li>
-                <a href="#home">
+                <a href="#top">
                     Accueil
                 </a>
             </li>
@@ -63,31 +63,30 @@
             <h1>Bonjour,</h1>
             <p>Je me présente, Thomas, jeune développeur remplis d’ambitions.</p>
             <p>Découvrez mon parcours et mes objectifs <a href="#about">ici</a>, les outils et languages que j’utilise au quotidien juste <a href="#skills">ici</a> et enfin mes projets en cours / réalisés en cliquant <a href="#projects">ici !</a></p>
-        
-            <a class="btn-next" href="#about">
-                <img src="./img/arrow-next.png" alt="Button next section">
-                <p>A propos</p>
-            </a>
-        
         </section>
         <div>
             <img id="img-home" src="./img/about.jpg" alt="Image profil">
             <img id="img-arrow" src="./img/arrow.png" alt="Fleche">
         </div>
+
+        <a class="btn-next" href="#about">
+            <img src="./img/arrow-next.png" alt="Button next section (A propos)">
+            <p>A propos</p>
+        </a>
+
     </div>
 
     <div id="about">
         <section>
-            <h1>Bonjour,</h1>
-            <p>Je me présente, Thomas, jeune développeur remplis d’ambitions.</p>
-            <p>Découvrez mon parcours et mes objectifs <a href="#about">ici</a>, les outils et languages que j’utilise au quotidien juste <a href="#skills">ici</a> et enfin mes projets en cours / réalisés en cliquant <a href="#projects">ici !</a></p>
-        
-            <a class="btn-next" href="#about">
-                <img src="./img/arrow-next.png" alt="Button next section">
-                <p>A propos</p>
-            </a>
-        
+            <h2>A propos de moi,</h2>
+            <p>Fort d’expériences en Logistique, j’ai développé de nombreuses compétences comme le travail efficace, l’amélioration continu et beaucoup d’autres !</p>
         </section>
+
+        <a class="btn-next" href="#skills">
+            <img src="./img/arrow-next.png" alt="Button next section (Compétences)">
+            <p>Compétences</p>
+        </a>
+
     </div>
 
     <!-- IMPORT JAVASCRIPT -->

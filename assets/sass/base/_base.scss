@@ -3,6 +3,7 @@
     margin: 0;
     font-family: 'Baloo Tamma 2', cursive;
     font-size: 25px;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -12,6 +13,9 @@ html {
 }
 
 h1 {
+  @include font-title;
+}
+h2 {
   @include font-title;
 }
 

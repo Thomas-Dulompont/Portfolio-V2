@@ -5,6 +5,7 @@
   margin: 0;
   font-family: 'Baloo Tamma 2', cursive;
   font-size: 25px;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -14,6 +15,12 @@ html {
 }
 
 h1 {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 600;
+  font-size: 80px;
+}
+
+h2 {
   font-family: 'Lexend', sans-serif;
   font-weight: 600;
   font-size: 80px;
@@ -360,7 +367,6 @@ template {
 
 .btn-next {
   max-height: 65px;
-  width: 165px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -392,7 +398,7 @@ template {
 
 .btn-next p {
   font-size: 20px;
-  margin: 0;
+  margin: 0 0 0 20px;
 }
 
 nav {
@@ -503,7 +509,7 @@ nav #navbar #btn-contact :hover {
 }
 
 section {
-  max-width: 575px;
+  max-width: 700px;
   position: relative;
 }
 
@@ -529,17 +535,20 @@ section > :first-child::after {
 }
 
 #home {
-  width: 80%;
-  margin: 50px auto;
+  width: 60%;
+  height: 610px;
+  margin: 75px auto 200px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  justify-items: center;
+  position: relative;
 }
 
 #home div {
   position: relative;
+  -ms-grid-column-align: right;
+      justify-self: right;
 }
 
 #home div #img-home {
@@ -551,7 +560,7 @@ section > :first-child::after {
 #home div #img-arrow {
   position: absolute;
   left: -300px;
-  top: 0;
+  top: 10px;
   max-width: 250px;
   -webkit-transform: rotate(-60deg);
           transform: rotate(-60deg);
@@ -577,5 +586,12 @@ section > :first-child::after {
   height: 3px;
   background-color: black;
   border-radius: 50px;
+}
+
+#about {
+  width: 60%;
+  height: 700px;
+  margin: 300px auto;
+  position: relative;
 }
 /*# sourceMappingURL=main.css.map */

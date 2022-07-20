@@ -1,11 +1,13 @@
 #home {
-    width: 80%;
-    margin: 50px auto;
+    width: 60%;
+    height: 610px;
+    margin: 75px auto 200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    position: relative;
     div {
         position: relative;
+        justify-self: right;
         #img-home {
             max-width: 400px;
             box-shadow: 40px 65px 0px 0px #BFBFBF;
@@ -13,7 +15,7 @@
         #img-arrow {
             position: absolute;
             left: -300px;
-            top: 0;
+            top: 10px;
             max-width: 250px;
             transform: rotate(-60deg);
         }
