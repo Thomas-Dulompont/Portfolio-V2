@@ -504,10 +504,21 @@ section > :first-child::after {
   position: relative;
 }
 
-#home div img {
+#home div #img-home {
   max-width: 400px;
   -webkit-box-shadow: 40px 65px 0px 0px #BFBFBF;
           box-shadow: 40px 65px 0px 0px #BFBFBF;
+}
+
+#home div #img-arrow {
+  position: absolute;
+  left: -270px;
+  top: 0;
+  max-width: 250px;
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+  -webkit-transition: 5s;
+  transition: 5s;
 }
 
 #home div::after {

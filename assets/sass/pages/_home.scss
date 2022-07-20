@@ -6,9 +6,17 @@
     justify-items: center;
     div {
         position: relative;
-        img {
+        #img-home {
             max-width: 400px;
             box-shadow: 40px 65px 0px 0px #BFBFBF;
+        }
+        #img-arrow {
+            position: absolute;
+            left: -270px;
+            top: 0;
+            max-width: 250px;
+            transform: rotate(-60deg);
+            transition: 5s;
         }
     }
     div::after {
