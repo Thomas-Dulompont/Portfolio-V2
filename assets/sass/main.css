@@ -493,5 +493,16 @@ section > :first-child::after {
 #home {
   width: 70%;
   margin: 100px auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+#home img {
+  max-width: 400px;
+  -webkit-box-shadow: 40px 65px 0px 0px #BFBFBF;
+          box-shadow: 40px 65px 0px 0px #BFBFBF;
 }
 /*# sourceMappingURL=main.css.map */

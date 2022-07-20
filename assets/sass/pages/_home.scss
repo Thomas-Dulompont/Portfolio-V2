@@ -1,4 +1,11 @@
 #home {
     width: 70%;
     margin: 100px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    img {
+        max-width: 400px;
+        box-shadow: 40px 65px 0px 0px #BFBFBF;
+    }
 }
