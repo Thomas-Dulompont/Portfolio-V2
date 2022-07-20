@@ -1,8 +1,25 @@
 #cv-arrow {
     position: absolute;
-    width: 95%;
+    width: 100%;
     height: auto;
-    top: 50px;
+    top: 0;
     right: 0;
-    transform: rotate(5deg);
+    .validated {
+        fill:#00AC64;
+        stroke: black;
+        stroke-width: 7;
+        &:hover {
+            cursor: pointer;
+            transition: 0.5s;
+        }
+    }
+    .soon {
+        fill: #AC6700;
+        stroke: black;
+        stroke-width: 7;
+        &:hover {
+            cursor: pointer;
+            transition: 0.5s;
+        }
+    }
 }

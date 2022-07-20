@@ -403,12 +403,34 @@ template {
 
 #cv-arrow {
   position: absolute;
-  width: 95%;
+  width: 100%;
   height: auto;
-  top: 50px;
+  top: 0;
   right: 0;
-  -webkit-transform: rotate(5deg);
-          transform: rotate(5deg);
+}
+
+#cv-arrow .validated {
+  fill: #00AC64;
+  stroke: black;
+  stroke-width: 7;
+}
+
+#cv-arrow .validated:hover {
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#cv-arrow .soon {
+  fill: #AC6700;
+  stroke: black;
+  stroke-width: 7;
+}
+
+#cv-arrow .soon:hover {
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 nav {
