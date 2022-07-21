@@ -30,3 +30,27 @@ body {
         z-index: -1;
     }
 }
+
+
+.test {
+    list-style-type: none;
+    margin-left: 40px;
+    li {
+        width: 500px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        p {
+            font-size: 20px;
+        }
+        .percentage {
+            color: #9A9A9A;
+        }
+        span {
+            width: 500px;
+            height: 15px;
+            background: linear-gradient(45deg, rgba(212,0,0,1) 80%, rgba(203,203,203,1) 50%);
+            border-radius: 50px;
+        }
+    }
+}

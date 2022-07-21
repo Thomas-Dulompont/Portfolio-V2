@@ -39,4 +39,36 @@ body {
           transform: translateY(-50%) rotate(45deg);
   z-index: -1;
 }
+
+.test {
+  list-style-type: none;
+  margin-left: 40px;
+}
+
+.test li {
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.test li p {
+  font-size: 20px;
+}
+
+.test li .percentage {
+  color: #9A9A9A;
+}
+
+.test li span {
+  width: 500px;
+  height: 15px;
+  background: linear-gradient(45deg, #d40000 80%, #cbcbcb 50%);
+  border-radius: 50px;
+}
 /*# sourceMappingURL=test.css.map */

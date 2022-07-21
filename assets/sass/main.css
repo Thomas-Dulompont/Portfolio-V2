@@ -693,4 +693,80 @@ section > :first-child::after {
 #skills section {
   max-width: 800px;
 }
+
+#skills .container .title {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 600;
+  font-size: 80px;
+  font-size: 40px;
+  margin: 50px 0 25px 0;
+}
+
+#skills .container #languages ul {
+  list-style-type: none;
+  margin-left: 40px;
+  position: relative;
+}
+
+#skills .container #languages ul li {
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 25px 0;
+}
+
+#skills .container #languages ul li p {
+  font-size: 20px;
+}
+
+#skills .container #languages ul li .percentage {
+  color: #9A9A9A;
+}
+
+#skills .container #languages ul > :nth-child(1) span {
+  width: 500px;
+  height: 15px;
+  background: linear-gradient(45deg, #d40000 80%, #cbcbcb 0%);
+  border-radius: 50px;
+}
+
+#skills .container #languages ul > :nth-child(2) span {
+  width: 500px;
+  height: 15px;
+  background: linear-gradient(45deg, #d40000 40%, #cbcbcb 0%);
+  border-radius: 50px;
+}
+
+#skills .container #languages ul > :nth-child(3) span {
+  width: 500px;
+  height: 15px;
+  background: linear-gradient(45deg, #d40000 15%, #cbcbcb 0%);
+  border-radius: 50px;
+}
+
+#skills .container #languages ul > :nth-child(4) span {
+  width: 500px;
+  height: 15px;
+  background: linear-gradient(45deg, #d40000 50%, #cbcbcb 0%);
+  border-radius: 50px;
+}
+
+#skills .container #languages ul::after {
+  content: "";
+  height: 350px;
+  width: 635px;
+  background-color: #f2f2f286;
+  position: absolute;
+  left: -75px;
+  top: -80px;
+  z-index: -1;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
 /*# sourceMappingURL=main.css.map */
