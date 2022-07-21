@@ -694,6 +694,18 @@ section > :first-child::after {
   max-width: 800px;
 }
 
+#skills .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #skills .container .title {
   font-family: 'Lexend', sans-serif;
   font-weight: 600;
@@ -768,5 +780,155 @@ section > :first-child::after {
   z-index: -1;
   -webkit-transform: rotate(5deg);
           transform: rotate(5deg);
+}
+
+#skills .container #tools {
+  list-style-type: none;
+}
+
+#skills .container #tools .title {
+  text-align: end;
+}
+
+#skills .container #tools ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+#skills .container #tools ul li {
+  margin: 10px;
+}
+
+#skills .container #tools ul li a {
+  height: 64px;
+  width: 64px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#skills .container #tools ul li a img {
+  height: 80%;
+  width: auto;
+}
+
+#skills .container #tools ul li a:hover {
+  position: relative;
+}
+
+#skills .container #tools ul li a:hover::after {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 45px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: black;
+  color: #9A9A9A;
+  font-size: 20px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#skills .container #tools ul li a:hover::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+          transform: translateX(-50%) rotate(45deg);
+}
+
+#skills .container #tools ul > :nth-child(1) a {
+  background-color: #42496F;
+}
+
+#skills .container #tools ul > :nth-child(1) a:hover::after {
+  content: "Figma";
+}
+
+#skills .container #tools ul > :nth-child(2) a {
+  background-color: black;
+}
+
+#skills .container #tools ul > :nth-child(2) a:hover::after {
+  content: "GitHub";
+}
+
+#skills .container #tools ul > :nth-child(3) a {
+  background-color: #4E26E0;
+}
+
+#skills .container #tools ul > :nth-child(3) a img {
+  height: 60%;
+  -webkit-filter: brightness(100);
+          filter: brightness(100);
+}
+
+#skills .container #tools ul > :nth-child(3) a:hover::after {
+  content: "Strapi";
+}
+
+#skills .container #tools ul > :nth-child(4) a {
+  background-color: #007AC1;
+}
+
+#skills .container #tools ul > :nth-child(4) a:hover::after {
+  content: "Trello";
+}
+
+#skills .container #tools ul > :nth-child(5) a img {
+  height: 100%;
+}
+
+#skills .container #tools ul > :nth-child(5) a:hover::after {
+  content: "Notion";
+}
+
+#skills .container #tools ul > :nth-child(6) a img {
+  height: 110%;
+}
+
+#skills .container #tools ul > :nth-child(6) a:hover::after {
+  content: "XCode";
+}
+
+#skills .container #tools ul::after {
+  content: "";
+  height: 250px;
+  width: 550px;
+  background-color: #f2f2f286;
+  position: absolute;
+  right: -40px;
+  top: -100px;
+  z-index: -1;
+  -webkit-transform: rotate(-8deg);
+          transform: rotate(-8deg);
 }
 /*# sourceMappingURL=main.css.map */

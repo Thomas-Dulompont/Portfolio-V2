@@ -7,6 +7,9 @@
         max-width: 800px;
     }
     .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         .title {
             @include font-title;
             font-size: 40px;
@@ -72,6 +75,115 @@
                     top: -80px;
                     z-index: -1;
                     transform: rotate(5deg);
+                }
+            }
+        }
+        #tools {
+            list-style-type: none;
+            .title {
+                text-align: end;
+            }
+            ul {
+                list-style-type: none;
+                display: flex;
+                position: relative;
+                justify-content: end;
+                li {
+                    margin: 10px;
+                    a {
+                        height: 64px;
+                        width: 64px;
+                        border-radius: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        img {
+                            height: 80%;
+                            width: auto;
+                        }
+                        &:hover {
+                            @include tools-hover;
+                        }
+                    }
+                }
+                & > :nth-child(1) {
+                    a {
+                        background-color: #42496F;
+                        &:hover {
+                            &::after {
+                                content: "Figma"
+                            }
+                        }
+                    }
+                }
+                & > :nth-child(2) {
+                    a {
+                        background-color: black;
+                        &:hover {
+                            &::after {
+                                content: "GitHub"
+                            }
+                        }
+                    }
+                }
+                & > :nth-child(3) {
+                    a {
+                        background-color: #4E26E0;
+                        img {
+                            height: 60%;
+                            filter: brightness(100);
+                        }
+                        &:hover {
+                            &::after {
+                                content: "Strapi"
+                            }
+                        }
+                    }
+                }
+                & > :nth-child(4) {
+                    a {
+                        background-color: #007AC1;
+                        &:hover {
+                            &::after {
+                                content: "Trello"
+                            }
+                        }
+                    }
+                }
+                & > :nth-child(5) {
+                    a {
+                        img {
+                            height: 100%;
+                        }
+                        &:hover {
+                            &::after {
+                                content: "Notion"
+                            }
+                        }
+                    }
+                }
+                & > :nth-child(6) {
+                    a {
+                        img {
+                            height: 110%;
+                        }
+                        &:hover {
+                            &::after {
+                                content: "XCode"
+                            }
+                        }
+                    }
+                }
+                &::after {
+                    content: "";
+                    height: 250px;
+                    width: 550px;
+                    background-color: #f2f2f286;
+                    position: absolute;
+                    right: -40px;
+                    top: -100px;
+                    z-index: -1;
+                    transform: rotate(-8deg);
                 }
             }
         }

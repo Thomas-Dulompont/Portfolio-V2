@@ -3,3 +3,33 @@
     font-weight: 600;
     font-size: 80px;
 }
+
+@mixin tools-hover {
+    position: relative;
+    &::after {
+        position: absolute;
+        bottom: -60px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 45px;
+        width: 100px;
+        border-radius: 5px;
+        background-color: black;
+        color: #9A9A9A;
+        font-size: 20px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-color: black;
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+    }
+}
