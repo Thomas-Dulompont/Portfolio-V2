@@ -1,0 +1,42 @@
+body {
+  width: 50%;
+  margin: 100px auto;
+}
+
+.bulle-hover {
+  width: 100px;
+  height: 45px;
+  background-color: black;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.bulle-hover p {
+  height: 24px;
+  color: #9A9A9A;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.bulle-hover::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+  z-index: -1;
+}
+/*# sourceMappingURL=test.css.map */

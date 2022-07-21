@@ -26,6 +26,18 @@ h2 {
   font-size: 80px;
 }
 
+h3 {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 600;
+  font-size: 80px;
+}
+
+h4 {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 600;
+  font-size: 80px;
+}
+
 a {
   text-decoration: none;
   color: #9A9A9A;
@@ -444,38 +456,6 @@ template {
   color: white;
 }
 
-#cv-arrow {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  top: 0;
-  right: 0;
-}
-
-#cv-arrow .validated {
-  fill: #00AC64;
-  stroke: black;
-  stroke-width: 7;
-}
-
-#cv-arrow .validated:hover {
-  cursor: pointer;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-#cv-arrow .soon {
-  fill: #AC6700;
-  stroke: black;
-  stroke-width: 7;
-}
-
-#cv-arrow .soon:hover {
-  cursor: pointer;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
 nav {
   width: 80%;
   height: 70px;
@@ -594,7 +574,8 @@ section p {
 }
 
 section > :first-child {
-  margin: 40px 0px 20px 0px;
+  margin: 0px 0px 20px 0px;
+  padding: 40px 0px 0px 0px;
   position: relative;
 }
 
@@ -665,8 +646,51 @@ section > :first-child::after {
 
 #about {
   width: 60%;
-  height: 700px;
+  height: 800px;
   margin: 200px auto;
   position: relative;
+}
+
+#about #cv-arrow {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 50px;
+  right: 0px;
+}
+
+#about #cv-arrow .validated {
+  fill: #00AC64;
+  stroke: black;
+  stroke-width: 7;
+}
+
+#about #cv-arrow .validated:hover {
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#about #cv-arrow .soon {
+  fill: #AC6700;
+  stroke: black;
+  stroke-width: 7;
+}
+
+#about #cv-arrow .soon:hover {
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#skills {
+  width: 60%;
+  height: 800px;
+  margin: 150px auto;
+  position: relative;
+}
+
+#skills section {
+  max-width: 800px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -18,6 +18,12 @@ h1 {
 h2 {
   @include font-title;
 }
+h3 {
+  @include font-title;
+}
+h4 {
+  @include font-title;
+}
 
 a {
   text-decoration: none;
