@@ -1,8 +1,11 @@
 #contact {
     width: 60%;
-    height: 800px;
+    height: 700px;
     margin: 200px auto;
     position: relative;
+    .btn-top {
+        bottom: -150px;
+    }
     section {
         max-width: 800px;
         p {
