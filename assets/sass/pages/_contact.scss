@@ -30,6 +30,7 @@
                 color: #FFFFFF;
                 font-size: 25px;
                 font-weight: 500;
+                transition: 0.3s;
                 img {
                     width: 64px;
                     height: 64px;
@@ -38,26 +39,41 @@
                 p {
                     text-align: center;
                 }
+                &:hover {
+                    transition: 0.3s;
+                }
             }
         }
         #linkedin {
             a {
                 background-color: #0E76A8;
+                &:hover {
+                    background-color: #0a5172;
+                }
             }   
         }
         #mail {
             a {
                 background-color: #BB001B;
+                &:hover {
+                    background-color: #910016;
+                }
             }   
         }
         #github {
             a {
                 background-color: black;
+                &:hover {
+                    background-color: rgb(43, 43, 43);
+                }
             }   
         }
         #discord {
             a {
                 background-color: #5865F2;
+                &:hover {
+                    background-color: #4a54c9;
+                }
             }   
         }
     }

@@ -1093,6 +1093,8 @@ section > :first-child::after {
   color: #FFFFFF;
   font-size: 25px;
   font-weight: 500;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 #contact #socials li a img {
@@ -1105,19 +1107,40 @@ section > :first-child::after {
   text-align: center;
 }
 
+#contact #socials li a:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 #contact #socials #linkedin a {
   background-color: #0E76A8;
+}
+
+#contact #socials #linkedin a:hover {
+  background-color: #0a5172;
 }
 
 #contact #socials #mail a {
   background-color: #BB001B;
 }
 
+#contact #socials #mail a:hover {
+  background-color: #910016;
+}
+
 #contact #socials #github a {
   background-color: black;
 }
 
+#contact #socials #github a:hover {
+  background-color: #2b2b2b;
+}
+
 #contact #socials #discord a {
   background-color: #5865F2;
+}
+
+#contact #socials #discord a:hover {
+  background-color: #4a54c9;
 }
 /*# sourceMappingURL=main.css.map */
