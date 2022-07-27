@@ -931,4 +931,10 @@ section > :first-child::after {
   -webkit-transform: rotate(-8deg);
           transform: rotate(-8deg);
 }
+
+#projects {
+  width: 60%;
+  height: 800px;
+  margin: 200px auto;
+}
 /*# sourceMappingURL=main.css.map */
