@@ -1,0 +1,64 @@
+#contact {
+    width: 60%;
+    height: 800px;
+    margin: 200px auto;
+    position: relative;
+    section {
+        max-width: 800px;
+        p {
+            max-width: 600px;
+        }
+    }
+    #socials {
+        width: 80%;
+        margin: 75px auto;
+        flex-wrap: wrap;
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        li {
+            a {
+                width: 330px;
+                height: 100px;
+                border-radius: 5px;
+                display: grid;
+                grid-template-columns: 20% 70%;
+                align-items: center;
+                justify-content: center;
+                color: #FFFFFF;
+                font-size: 25px;
+                font-weight: 500;
+                img {
+                    width: 64px;
+                    height: 64px;
+                    justify-self: flex-start;
+                }
+                p {
+                    text-align: center;
+                }
+            }
+        }
+        #linkedin {
+            a {
+                background-color: #0E76A8;
+            }   
+        }
+        #mail {
+            a {
+                background-color: #BB001B;
+            }   
+        }
+        #github {
+            a {
+                background-color: black;
+            }   
+        }
+        #discord {
+            a {
+                background-color: #5865F2;
+            }   
+        }
+    }
+}
